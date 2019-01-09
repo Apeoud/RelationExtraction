@@ -55,6 +55,7 @@ class RiedelDataset(REDataset):
         label = s_list[4]
         sentence_mention = s_list[5:]
 
+        # todo : entity position not defined
         s = RESentence(sentence_mention, e1_mention, e2_mention, 0, 0, e1_id, e2_id)
 
         return True, s, label
